@@ -148,15 +148,15 @@ def run_test_even_better_draw_circles():
     print('--------------------------------------------------')
 
     even_better_draw_circles(100,200,15,8)
-    even_better_draw_circles(500,300,5,20)
-    even_better_draw_circles(600,700,60,5)
+    even_better_draw_circles(150,300,5,20)
+    even_better_draw_circles(275,75,20,5)
 
 
 #   The inputs for the following method are x coord of center, y coord of center,
 #   radius increase per circle and number of circles
 #   The first circle will always have a radius of 10
 def even_better_draw_circles(x,y,r,n):
-    window = rg.RoseWindow(1000,1000)
+    window = rg.RoseWindow(400,400)
     center = rg.Point(x,y)
     for k in range(n):
         circle = rg.Circle(center,10+(k*r))
