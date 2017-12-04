@@ -23,7 +23,7 @@ def main():
     # print_sequence3()
     # draw_circles3()
     # print_cosines()
-    draw_cosines_and_sines()
+    # draw_cosines_and_sines()
 
 
 def print_sequence1():
@@ -125,6 +125,7 @@ def draw_circles2():
     for k in range(18):
         center = rg.Point(50+(20*k),100)
         circle = rg.Circle(center,10)
+        circle.fill_color = 'blue'
         circle.attach_to(window)
         window.render(0.1)
     window.close_on_mouse_click()
